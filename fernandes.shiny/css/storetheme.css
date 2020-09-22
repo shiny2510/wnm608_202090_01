@@ -2,6 +2,9 @@
    --color-neutral-light:#f0ecec;
    --color-neutral-medium:#9e8d8d;
    --color-neutral-dark:#392f2f;
+   --color-neutral-theme1:#FF380D;
+   --color-neutral-theme2:#FFB70D;
+   --color-neutral-theme3:#FF7700;
 }
 
 body {
@@ -9,7 +12,16 @@ body {
    background-color:#f9f9f9;
 }
 
-
+.navbar {
+   background-color:var(--color-neutral-light);
+   color:var(--color-neutral-theme1);
+   line-height:var(--header-height);
+}
+.navbar h1 {
+   font-size:1.5em;
+   font-family:Futura, Arial, sans-serif;
+   margin:0;
+  }
 
 
 .view-window>h2 {
