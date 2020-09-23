@@ -8,8 +8,17 @@
 }
 
 body {
-   font-family:Calibri, sans-serif;
-   background-color:#f9f9f9;
+   font-family: Avenir, sans-serif;
+   background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family:Futura, Arial, sans-serif;
 }
 
 .navbar {
@@ -17,21 +26,46 @@ body {
    color:var(--color-neutral-theme1);
    line-height:var(--header-height);
 }
+
 .navbar h1 {
    font-size:1.5em;
-   font-family:Futura, Arial, sans-serif;
+   font-family: Futura, Arial, sans-serif;
    margin:0;
   }
 
 
-.view-window>h2 {
+
+.view-window .textblock {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%,-50%);
-    background-color: rgba(0,0,0,0.3);
-    padding: 1em;
-    border-radius: 1em;
     color: white;
-    font-size: 3em;
+    font-size: 1.5em;
+}
+
+.card{
+  padding:0;
+}
+
+.btn{
+   width: fit-content;
+   padding:1em;
+   font-size:1em;
+   font-family: futura;
+}
+   .btn.cta_primary{
+   background-color:var(--color-neutral-theme1);
+   color:var(--color-neutral-light);
+   
+}
+
+   .btn.cta_secondary{
+   background-color:var(--color-white);
+   border:2px solid var(--color-neutral-theme1);
+}
+
+.cta_primary:hover{
+  box-shadow: ;
+  opacity: 0.5;
 }
