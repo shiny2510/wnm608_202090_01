@@ -7,8 +7,14 @@
    --color-neutral-theme3:#FF7700;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Karla&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
-   font-family: Avenir, sans-serif;
+   font-family: Josefin Sans, sans-serif;
+   font-style: normal;  
+   font-weight: 400;
    background-color: #f9f9f9;
 }
 
@@ -18,7 +24,10 @@ h3,
 h4,
 h5,
 h6 {
-   font-family:Futura, Arial, sans-serif;
+   font-family:Karla;
+   font-style: normal;  
+   font-weight: 400;
+   font-variant-caps: small-caps;
 }
 
 .navbar {
@@ -29,7 +38,10 @@ h6 {
 
 .navbar h1 {
    font-size:1.5em;
-   font-family: Futura, Arial, sans-serif;
+   font-family:Karla;
+   font-style: normal;  
+   font-weight: 400;
+   font-variant-caps: small-caps;
    margin:0;
   }
 
