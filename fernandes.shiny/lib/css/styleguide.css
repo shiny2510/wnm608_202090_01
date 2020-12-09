@@ -65,7 +65,7 @@ h6 {
 .flex-wrap{ flex-wrap:wrap; }
 .justify-content-space-between{ justify-content: space-between; }
 
-
+.flex-end{align-content: flex-end; }
 
 
 .view-window {
@@ -91,9 +91,8 @@ h6 {
 
 /*navbar-topmost panel*/
 .navbar {
-   background-color:var(--color-neutral-dark);
-   color:var(--color-neutral-light);
-   line-height:var(--header-height);
+   background-color:var(--color-neutral-theme-accent-light);
+   color:var(--color-neutral-theme-primary);
    padding: 1.5em;
 }
 .navbar h1 {
@@ -149,6 +148,11 @@ h6 {
       font-family:arial;
    }
 
+   .nav.crumbs button{
+      background-color:transparent;
+      color:inherit;
+      text-decoration:underline;
+   }
 
 
 
@@ -161,7 +165,7 @@ a {
    color:inherit;
 }
 a:hover {
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 /*CARDS*/
@@ -201,6 +205,12 @@ a:hover {
       background-image:linear-gradient(-45deg,#e1b4c5,#caaaca,#885d90);
    }
 
+   .card-section~.card.section{
+    border-top: 1px solid var(--color-neutral-light);
+   }
+   .card-section{
+      padding: 1em;
+   }
 
 /*WELL*/ 
 
@@ -225,9 +235,11 @@ code {
 .btn,
 .form-button {
     display: inline-block;
+    width: 100%;
     border-width: 0;
     font: inherit;
-    padding: 0.5em 0.5em;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -365,7 +377,31 @@ code {
       font:inherit;
    }
 
-
+   .hotdog.stack button,
+   .hotdog.stack input,
+   .hotdog input {
+      background-color:transparent;
+      border-width:0;
+      flex:1 1 100%;
+      outline:0;
+      font:inherit;
+}
+   .hotdog.stack {
+      padding:0;
+   }
+   .hotdog.stack input {
+      padding:0.5em 1.5em;
+   }
+   .hotdog.stack button {
+      padding:0.5em 1.5em;
+      flex: none;
+   }
+   .hotdog.stack>:first-child {
+      border-radius: 2em 0 0 2em;
+   }
+   .hotdog.stack>:last-child {
+      border-radius: 0 2em 2em 0;
+   }
 
 .form-select>select {
     padding: 0.5em 1em;
@@ -438,7 +474,12 @@ code {
 }
 
 
-
+.position-fixed{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
 
 
 

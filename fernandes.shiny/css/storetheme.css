@@ -11,16 +11,37 @@
 }
 
 /*fontstyle*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Karla&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-   font-family: Josefin Sans, sans-serif;
+   font-family: "Josefin Sans", sans-serif;
    font-style: normal; 
    line-height: 2em; 
    font-weight: 100;
    background-color: #f9f9f9;
+}
+
+.position-body{
+  padding: 0 0 0 0;
+}
+
+.stickyhead{
+  background-color: var(--color-neutral-theme-primary);
+  color: white;
+}
+
+.stickyhead p{
+  margin: 0;
+  padding-left: 1em;
+}
+.social-icons img{
+ padding: 0 0.5em;
+}
+
+.social-icons{
+  align-items: center;
 }
 
 /*color theme */
@@ -36,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: Libre Baskerville;
+   font-family: 'Libre+Baskerville';
    font-style: italic; 
    line-height: 1em; 
    font-weight: 100;
@@ -46,36 +67,46 @@ h6 {
 /*list*/
 
 li{
-   font-family:Karla;
+   font-family: Karla;
    font-style: normal;  
    font-weight: 400;
    font-variant-caps: small-caps;
 }
 
-
-
-.navbar {
-   background: var(--color-neutral-theme-primary);
-   color:var(--color-neutral-light);
-   line-height:var(--header-height);
+.main_navbar{
+  background: var(--color-neutral-theme-accent-medium);
+  color:var(--color-neutral-theme-primary);
+  padding: 0.5em;
+  font-family: Karla;
+  font-variant-caps: small-caps;
+  font-weight: 400;
 }
 
-.navbar h1 {
+.navbar {
+   background: var(--color-neutral-theme-accent-medium);
+   color:var(--color-neutral-theme-primary);
+   padding: 0.5em;
+   font-family: Karla;
+   font-style: normal;  
+   font-weight: 400;
+   font-variant-caps: small-caps;
+}
+
+/*.navbar h1 {
    font-size:1.5em;
-   font-family:Libre Baskerville;
+   font-family:'Libre Baskerville';
    font-style: italic;  
    font-weight: 100;
    margin:0;
-  }
-
+  }*/
 
 
 .view-window .textblock {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 30%;
     transform: translate(-50%,-50%);
-    color: white;
+    color:var(--color-neutral-theme-primary);
     font-size: 1.5em;
 }
 
@@ -84,7 +115,7 @@ li{
 /*buttons*/
 
 .btn{
-  font-family: karla;
+  font-family: Karla;
   font-style: normal;  
   font-weight: 400;
   font-size: 1em;
@@ -111,19 +142,60 @@ li{
     box-shadow:1px 1px 4px rgba(0,0,0,0.2);
     padding:1em;
     transition:all 0.3s;
+    display: block;
+    height: 100%;
 }
+.product-item figure{
+  margin: 0;
+}
+
 .product-item:hover {
     box-shadow:1px 1px 12px rgba(0,0,0,0.4);
 }
-.product-image img {
-   width:100%;
+
+.product-item a: hover{
+  text-decoration: none;
 }
+.product-image{
+  position: relative;
+  height:0;
+  overflow: hidden;
+  padding-bottom: 80%;
+}
+.image-main img{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+}
+.image-main img,
+.product-image img {
+  position: absolute;
+   width:100%;
+   object-fit: cover;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.image-thumbs img{
+  width: 120px;
+  height: 120px;
+  object-fit:cover;
+}
+
+
+.card :first-child,
+.card-section :first-child{
+  margin-top: 0;
+}
+
 .product-price{
 
 }
 
 .product-title {
-   font-family: Libre Baskerville;
+   font-family: 'Libre+Baskerville';
    font-style: italic;
 }
 
@@ -138,6 +210,54 @@ li{
 .product-desc{
   font-size:1em;
   font-weight: 100;
+}
+
+
+.product-image {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%;
+}
+
+/*//footer*/
+.footer{
+  background-color: var(--color-neutral-theme-secondary);
+  margin-top: 2em;
+  color: #fff;
+}
+
+.footerbottom{
+  background-color: var(--color-neutral-theme-primary);
+  text-align: center;
+  bottom: 0px;
+  color: white;
+}
+
+.footerbottom p{
+  margin:0;
+}
+.footer_context{
+  padding: 0 1em 0 1em;
+}
+
+.suggestions{
+  color: var(--color-neutral-theme-primary);
+  outline:0;
+  border: none;
+  background-color: transparent;
+  font-family: karla;
+}
+.suggestions:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span.badge:not(:empty)::after {
+  content:')';
+}
+span.badge:not(:empty)::before {
+  content:'(';
 }
 
 
