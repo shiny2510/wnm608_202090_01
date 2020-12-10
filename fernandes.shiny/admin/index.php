@@ -11,13 +11,13 @@ $products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "product_name"=>"Banana",
-   "product_price"=>"10",
-   "category"=>"fruit",
-   "product_description"=>"Such a nice banana",
-   "quantity"=>"37325",
-   "image_other"=>"fruit_banana.jpg,fruit_apple.jpg,fruit_kiwi_m.jpg",
-   "image_thumb"=>"fruit_banana_m.jpg"
+   "product_name"=>"Gold Theme Explosion Box",
+   "product_price"=>"50",
+   "category"=>"Explosion Box",
+   "product_description"=>"Gold Theme explosion box with 3 layers. Insert your own images and messages. The final box opens with gold coin chocolates",
+   "quantity"=>"5",
+   "image_other"=>"explosionbox_3_1.jpg,explosionbox_3_2.jpg",
+   "image_thumb"=>"explosionbox_3_1.jpg"
 ];
 
 
@@ -26,13 +26,13 @@ switch(@$_GET['crud']) {
    case 'update':
 
       makeStatement("product_update",[
-         $_POST['product_name'],
-         $_POST['product_price'],
-         $_POST['category'],
-         $_POST['product_description'],
-         $_POST['quantity'],
-         $_POST['image_other'],
-         $_POST['image_thumb'],
+         $_POST['product-name'],
+         $_POST['product-price'],
+         $_POST['product-category'],
+         $_POST['product-description'],
+         $_POST['product-quantity'],
+         $_POST['product-image_other'],
+         $_POST['product-image_thumb'],
          $_GET['id']
       ]);
 
@@ -43,13 +43,13 @@ switch(@$_GET['crud']) {
    case 'create':
 
       $id = makeStatement("product_insert",[
-         $_POST['product_name'],
-         $_POST['product_price'],
-         $_POST['category'],
-         $_POST['product_description'],
-         $_POST['quantity'],
-         $_POST['image_other'],
-         $_POST['image_thumb'],
+         $_POST['product-name'],
+         $_POST['product-price'],
+         $_POST['product-category'],
+         $_POST['product-description'],
+         $_POST['product-quantity'],
+         $_POST['product-image_other'],
+         $_POST['product-image_thumb']
       ]);
       header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
@@ -76,7 +76,7 @@ $id = $_GET['id'];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/store/$o'>";
+   return $r."<img src='./img/store/$o'>";
 });
 
 
@@ -91,7 +91,7 @@ $productdata = $id=='new' ? '' : <<<HTML
       <h2 class="flex-stretch">$product->product_name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="./img/icons/trash.svg" class="icon">
          </a>
       </div>
    </div>
@@ -134,8 +134,8 @@ echo <<<HTML
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
             <h2>$addoredit Product</h2>
             <div class="form-control">
-               <label for="product-title" class="form-label">Title</label>
-               <input id="product-title" name="product-title" type="text" placeholder="Type product title" class="form-input" value="$product->product_name">
+               <label for="product-name" class="form-label">Title</label>
+               <input id="product-name" name="product-name" type="text" placeholder="Type product name" class="form-input" value="$product->product_name">
             </div>
             <div class="form-control">
                <label for="product-category" class="form-label">Category</label>

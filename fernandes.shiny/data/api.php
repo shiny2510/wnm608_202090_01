@@ -10,7 +10,7 @@ function getRequires($props) {
 }
 
 
-function makeStatement($type) {
+function makeStatement($type,$params=[]) {
 
    switch($type) {
       case "products_all":
@@ -71,9 +71,6 @@ function makeStatement($type) {
 
 
 
-
-
-
       case "search":
          if(!getRequires(['s'])) return
             ["error"=>"Missing Properties"];
@@ -86,7 +83,64 @@ function makeStatement($type) {
             ");
          break;
 
+    case "product_insert":
+         return MYSQLIQuery("INSERT INTO
+            `products`
+            (
+               `product_name`,
+               `product_price`,
+               `category`,
+               `product_description`,
+               `quantity`,
+               `image_other`,
+               `image_thumb`,
+               `date_create`,
+               `date_modify`
+            )
+            VALUES
+            (
+               '{$params[0]}',
+               '{$params[1]}',
+               '{$params[2]}',
+               '{$params[3]}',
+               '{$params[4]}',
+               '{$params[5]}',
+               '{$params[6]}',
+               NOW(),
+               NOW()
+            )
+            ");
+         break;
 
+         case "product_update":
+         return MYSQLIQuery("UPDATE
+            `products`
+            SET
+               `product_name` = '{$params[0]}',
+               `product_price` = '{$params[1]}',
+               `category` = '{$params[2]}',
+               `product_description` = '{$params[3]}',
+               `quantity` = '{$params[4]}',
+               `image_other` = '{$params[5]}',
+               `image_thumb` = '{$params[6]}'
+            WHERE `id` = {$params[7]}
+            ");
+         break;
+
+      case "product_delete":
+         return MYSQLIQuery("DELETE FROM
+            `products` WHERE `id` = {$params[0]}
+            ");
+         break;
+
+
+
+      case "products_admin_all":
+         return MYSQLIQuery("SELECT *
+            FROM `products`
+            ORDER BY `date_create` DESC
+            ");
+         break;
 
 
       default: return ["error"=>"No Matched Type"];

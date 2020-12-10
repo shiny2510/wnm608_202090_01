@@ -1,4 +1,5 @@
- <?php include "parts/meta.php" ?>
+ 
+
 
 <header class="main_navbar">
    <div class="container display-flex flex-align-center">
@@ -13,8 +14,10 @@
       	 <div class="display-flex justify-content-space-between">
             <a href="about.php">ABOUT US</a>
             <a href="product_list.php">SHOP</a>
-            <a href="product_cart.php">CART</a>
+            <a href="product_cart.php"><span>CART</span>
+            </a>
       </nav>
    </div>     
 </header>
+
 
