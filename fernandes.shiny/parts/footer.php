@@ -9,13 +9,13 @@
 		</div>
 		
 		<div class="footer_context col-xs-12 col-md-5">
-			<h4>ABOUT US</h4>
+			<h4>About Us</h4>
 			<p>Giftitions is a customised gifting experience with made to order products. We help you find the right product as per your ideas and requirements suiting the occasion.
   </p>
 		</div>
 
 		<div class="footer_context col-xs-12 col-md-3">
-			<h4>CONTACT US</h4>
+			<h4>Contact Us</h4>
 			<img src="./img/store/icons/phone.svg">
 			976-955-3860
 			<br>

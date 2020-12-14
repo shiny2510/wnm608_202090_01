@@ -25,7 +25,7 @@ $cart = getCartItems();
    <div class="container">
       <div class="grid gap">
          <div class="col-xs-12 col-md-8">
-            <div class="card soft">
+            <div class="card">
                <h2>Product Cart</h2>
                <?
 
@@ -35,7 +35,7 @@ $cart = getCartItems();
             </div>
          </div>
          <div class="col-xs-12 col-md-4">
-            <div class="card soft flat">
+            <div class="card">
                <div class="card-section">
                   <h2>Totals</h2>
                </div>

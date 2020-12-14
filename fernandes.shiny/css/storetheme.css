@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: 'Libre+Baskerville';
+   font-family: "Libre Baskerville";
    font-style: italic; 
    line-height: 1em; 
    font-weight: 100;
@@ -195,7 +195,7 @@ li{
 }
 
 .product-title {
-   font-family: 'Libre+Baskerville';
+   font-family: "Libre Baskerville";
    font-style: italic;
 }
 

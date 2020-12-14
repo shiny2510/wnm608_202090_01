@@ -23,7 +23,10 @@
    --color-neutral-theme-accent-dark:#d99cb8; /*pink*/
 }
 
-
+/*fontstyle*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
    margin:0;
@@ -66,6 +69,7 @@ h6 {
 .justify-content-space-between{ justify-content: space-between; }
 
 .flex-end{align-content: flex-end; }
+.space-around{justify-content: space-around;}
 
 
 .view-window {
@@ -234,11 +238,9 @@ code {
 
 .btn,
 .form-button {
+    font-family: Karla;
     display: inline-block;
-    width: 100%;
     border-width: 0;
-    font: inherit;
-    border-radius: 0.3em;
     padding: 0.5em 1em;
     text-align: center;
     text-decoration: none;
@@ -246,11 +248,7 @@ code {
     outline: 0;
     -webkit-appearance:none;
     background-color:var(--color-neutral-theme-primary);
-}
-
-.form-button{
-   background-color:var(--color-neutral-theme-primary);
-   color:var(--color-white);
+    color:var(--color-white);
 }
 
 .btn:hover,
@@ -265,8 +263,7 @@ code {
 }
 
 .cta_primary:hover{
-  box-shadow: ;
-  opacity: 0.5;
+  background-color:var(--color-neutral-theme-accent-dark);
 }
 
 .btn.borderbutton{

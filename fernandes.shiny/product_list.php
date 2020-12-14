@@ -74,7 +74,7 @@ $products = isset($result['error']) ? [] : $result;
 
    <div class="container">
       
-         <h2>Product List</h2>
+         <h2></h2>
 
       <form action="product_list.php" method="get" class="hotdog stack">
 
@@ -100,6 +100,17 @@ $products = isset($result['error']) ? [] : $result;
             <form action="product_list.php" method="get">
                <?
                makeHiddenValues($_GET,[
+                  "category"=>"frames",
+                  "t"=>"products_by_category"
+               ]);
+               ?>
+
+               <input type="submit" value="FRAMES" class="suggestions">
+            </form>
+
+            <form action="product_list.php" method="get">
+               <?
+               makeHiddenValues($_GET,[
                   "category"=>"home decor",
                   "t"=>"products_by_category"
                ]);
@@ -118,6 +129,12 @@ $products = isset($result['error']) ? [] : $result;
 
                <input type="submit" value="EXPLOSION BOX" class="suggestions">
             </form>
+
+
+
+
+
+
          </div>
          <div class="flex-stretch"></div>
          <div class="flex-none">
@@ -136,8 +153,6 @@ $products = isset($result['error']) ? [] : $result;
          </div>
       </div>
 
-
-      <h2>Product List</h2>
 
       <div class="grid gap">
         

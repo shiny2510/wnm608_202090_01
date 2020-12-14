@@ -39,17 +39,17 @@ $totalfixed = number_format($o->total,2,'.','');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex">
-   <div class="flex-none image-thumbs">
+   <div class="flex-none image-thumbs" style="padding-left: 1em">
       <img src="./img/store/$o->image_thumb">
    </div>
-   <div class="flex-stretch">
+   <div class="flex-stretch" style="padding-left: 1em">
       <strong>$o->product_name</strong>
       <form action="product_actions.php?action=delete-cart-item" method="post">
          <input type="hidden" name="product-id" value="$o->id">
          <input type="submit" value="Delete" class="form-button inline" style="font-size:0.8em">
       </form>
    </div>
-   <div class="flex-none">
+   <div class="flex-none" style="padding-left: 1em">
       <div>&dollar;$totalfixed</div>
       <form action="product_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
          <input type="hidden" name="product-id" value="$o->id">
@@ -89,7 +89,7 @@ return <<<HTML
    <div class="flex-none">&dollar;$taxed</div>
 </div>
 <div class="card-section">
-   <a href="product_checkout.php" class="form-button">Checkout</a>
+   <a href="product_checkout.php" class="form-button">CHECKOUT</a>
 </div>
 HTML;
 }
