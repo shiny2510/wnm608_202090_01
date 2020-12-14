@@ -13,10 +13,15 @@ include_once "lib/php/functions.php";?>
 
 
    <div class="container">
-      <div class="card soft">
-         <h2>Thanks for Purchasing</h2>
+      <div class="card">
 
-         <a href="product_list.php">Back to shopping</a>
+         <h2>Thank you for Purchasing</h2>
+         <p> Your order will be shipped and delivered to you in 5-7 business days</p>
+
+         <div class="form-button flex-none"><a href="product_list.php">BACK TO SHOPPING</a>
+         </div>
+
+         
       </div>
    </div>
 

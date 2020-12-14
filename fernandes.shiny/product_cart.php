@@ -34,16 +34,22 @@ $cart = getCartItems();
                ?>
             </div>
          </div>
+
          <div class="col-xs-12 col-md-4">
             <div class="card">
                <div class="card-section">
                   <h2>Totals</h2>
                </div>
+               <div class="card-section">
                <?= cartTotals() ?>
+               </div>
             </div>
          </div>
+
       </div>
    </div>
+
+    <?php include "parts/footer.php" ?>
 
 </body>
 </html>

@@ -5,7 +5,7 @@
 	<div class="footercontent display-flex grid gap">
 		
 		<div class="footer_context col-xs-12 col-md-2">
-			<a href="index.php"><img src="./img/store/logoblack.png" alt="logo" style="width:125px; padding-top:30%"></a>
+			<a href="index.php"><img src="./img/store/logo_new.png" alt="logo" style="width:125px; padding-top:30%"></a>
 		</div>
 		
 		<div class="footer_context col-xs-12 col-md-5">

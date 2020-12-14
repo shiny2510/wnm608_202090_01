@@ -103,7 +103,7 @@ HTML;
 
 function makeAdminList($r,$o) {
 return $r.<<<HTML
-<div class="display-flex card flat soft">
+<div class="display-flex card">
    <div class="flex-none image-thumbs">
       <img src="./img/store/$o->image_thumb">
    </div>
@@ -112,8 +112,8 @@ return $r.<<<HTML
       <div>$o->category</div>
    </div>
    <div class="flex-none">
-      <div class="card-section"><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
-      <div class="card-section"><a href="product_item.php?id=$o->id" class="form-button">View</a></div>
+      <div class="card-section"><a href="admin/?id=$o->id" class="form-button">EDIT</a></div>
+      <div class="card-section"><a href="product_item.php?id=$o->id" class="form-button">VIEW</a></div>
    </div>
 </div>
 HTML;

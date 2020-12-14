@@ -78,7 +78,6 @@ li{
   color:var(--color-neutral-theme-primary);
   padding: 0.5em;
   font-family: Karla;
-  font-variant-caps: small-caps;
   font-weight: 400;
 }
 
@@ -101,15 +100,20 @@ li{
   }*/
 
 
-.view-window .textblock {
-    position: absolute;
+.textblock {
+  /*  position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%,-50%);
     color:var(--color-neutral-theme-primary);
-    font-size: 1.5em;
+    font-size: 1.5em;*/
+    color: var(--color-neutral-theme-primary);
+    padding: 10em 15em;
 }
 
+.textblock h2{
+  line-height: 2em;
+}
 
 
 /*buttons*/
@@ -137,9 +141,8 @@ li{
 
 .product-item {
     margin: 0;
-    border-radius:0.7em;
     background-color:white;
-    box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+    box-shadow:1px 1px 4px rgba(0,0,0,0.1);
     padding:1em;
     transition:all 0.3s;
     display: block;
@@ -150,7 +153,7 @@ li{
 }
 
 .product-item:hover {
-    box-shadow:1px 1px 12px rgba(0,0,0,0.4);
+    box-shadow:1px 1px 10px rgba(0,0,0,0.4);
 }
 
 .product-item a: hover{
@@ -162,15 +165,22 @@ li{
   overflow: hidden;
   padding-bottom: 80%;
 }
-.image-main img{
+/*.image-main img{
   position: relative;
   height: 0;
   overflow: hidden;
-  padding-bottom: 60%;
+}*/
+.image-main img{
+  width:100%;
+   object-fit: cover;
+   height: 100%;
+   top: 0;
+   left: 0;
 }
-.image-main img,
+
+
 .product-image img {
-  position: absolute;
+   position: absolute;
    width:100%;
    object-fit: cover;
    height: 100%;
@@ -225,6 +235,7 @@ li{
   background-color: var(--color-neutral-theme-secondary);
   margin-top: 2em;
   color: #fff;
+  margin-bottom: 0px;
 }
 
 .footerbottom{
@@ -259,6 +270,8 @@ span.badge:not(:empty)::after {
 span.badge:not(:empty)::before {
   content:'(';
 }
+
+
 
 
 @media (max-width:600px) {

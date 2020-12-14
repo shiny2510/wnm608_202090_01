@@ -86,12 +86,12 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 
 
 $productdata = $id=='new' ? '' : <<<HTML
-<div class="card soft">
+<div class="card">
    <div class="display-flex">
       <h2 class="flex-stretch">$product->product_name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="./img/icons/trash.svg" class="icon">
+            <img src="./img/store/icons/trash.svg" class="icon">
          </a>
       </div>
    </div>
@@ -120,7 +120,7 @@ $productdata = $id=='new' ? '' : <<<HTML
 HTML;
 
 echo <<<HTML
-<div class="card soft">
+<div class="card">
 <nav class="nav crumbs">
    <ul>
       <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
@@ -130,7 +130,7 @@ echo <<<HTML
 <div class="grid gap">
    <div class="col-xs-12 col-md-4">$productdata</div>
    <div class="col-xs-12 col-md-8">
-      <div class="card soft">
+      <div class="card">
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
             <h2>$addoredit Product</h2>
             <div class="form-control">
@@ -175,7 +175,8 @@ HTML;
 
 
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
    <title>Product Administrator</title>
@@ -184,18 +185,18 @@ HTML;
 </head>
 <body>
 
-   <header class="navbar">
+   <header class="main_navbar">
       <div class="container display-flex">
          <div class="flex-none">
-            <h1>Products Admin</h1>
+            <h2>Products Admin</h2>
          </div>
          <div class="flex-stretch"></div>
          <!-- nav.nav.flex-none>ul>li>a[href=#]>{List} -->
-         <nav class="nav flex-none">
+         <nav class="flex-none nav">
             <ul class="display-flex">
-               <li><a href="product_list.php">Store</a></li>
-               <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
-               <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
+               <li><a href="product_list.php">STORE</a></li>
+               <li><a href="<?= $_SERVER['PHP_SELF'] ?>">LIST</a></li>
+               <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">ADD NEW PRODUCT</a></li>
             </ul>
          </nav>
       </div>
@@ -220,7 +221,7 @@ HTML;
          } else {
 
          ?>
-         <div class="card medium soft">
+         <div class="well">
          <h2>Product List</h2>
 
          <div>

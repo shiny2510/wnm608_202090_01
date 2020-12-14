@@ -41,6 +41,7 @@ h4,
 h5,
 h6 {
    font-family:Cambria, Georgia, "Times New Roman", serif;
+   color: var(--color-neutral-theme-primary);
 }
 
 
@@ -210,7 +211,7 @@ a:hover {
    }
 
    .card-section~.card.section{
-    border-top: 1px solid var(--color-neutral-light);
+    border-top: 1px solid var(--color-neutral-theme-primary);
    }
    .card-section{
       padding: 1em;
@@ -219,7 +220,7 @@ a:hover {
 /*WELL*/ 
 
 .well {
-    padding: 0.5em;
+    padding: 2em;
     background-color: #f5edee;
     margin: 1px;
 }
@@ -268,11 +269,12 @@ code {
 
 .btn.borderbutton{
    background-color:var(--color-white);
-   border:2px solid var(--color-neutral-dark);
+   color: var(--color-neutral-theme-primary);
+   border:2px solid var(--color-neutral-theme-primary);
 }
 
-.borderbutton:hover{
-   background-color: var(--color-neutral-dark)
+.btn.borderbutton:hover{
+   background-color: var(--color-neutral-theme-primary);
    color: white;
 }
 
@@ -335,10 +337,10 @@ code {
     display: inline-block;
     width: 100%;
     border-width: 0;
-    background-color: transparent;
+    background-color: var(--color-neutral-light);
     font: inherit;
     padding: 0.5em 1em;
-    border-bottom: 1px solid var(--color-neutral-medium);
+    /*border-bottom: 1px solid var(--color-neutral-medium);*/
     outline: 0;
 }
 .form-control {
@@ -404,7 +406,6 @@ code {
     padding: 0.5em 1em;
     background-color: var(--color-neutral-light);
     border-width: 0;
-    border-radius: 0.3em;
     cursor: pointer;
     -webkit-appearance:none;
     display:inline-block;

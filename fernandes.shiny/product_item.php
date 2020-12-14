@@ -27,7 +27,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 <div class="container">
    <div class="grid gap">
       <div class="col-xs-12 col-md-7">
-         <div class="card soft">
+         <div class="card">
             <div class="image-main">
                <img src="./img/store/<?= $product->image_main ?>" alt="">
             </div>
@@ -37,7 +37,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
          </div>
       </div>     
       <div class="col-xs-12 col-md-5">
-      <form class="card soft flat" method="post" action="product_actions.php?action=add-to-cart">
+      <form class="card" method="post" action="product_actions.php?action=add-to-cart">
             <input type="hidden" name="product-id" value="<?= $product->id ?>">
             <div class="card-section">
                <h2><?= $product->product_name ?></h2>
@@ -68,20 +68,14 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
             </div>
          </div>
                   
-         <div class="form-control">
-                     
-            <label for="product-color" class="form-label">Color</label>
-            <div class="form-select">
-               <select name="product-color" id="product-color">
-                     <option value="red">Red</option>
-                     <option value="green">Green</option>
-                     <option value="blue">Blue</option>
-               </select>
-            </div>
+
+         <div class="form-control">           
+            <label for="Add your message" class="form-label">Add your Personalised Message</label>
+            <input type="text" name="Message" placeholder="Enter your message" class="form-input">
          </div>
                   
          <div class="form-control">
-            <input type="submit" class="form-button" value="Add To Cart">
+            <input type="submit" class="btn cta_primary" value="ADD TO CART">
          </div>
       </div>
 
@@ -90,11 +84,12 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       
     </form>   
 </div>
-   <div class="card soft">
+   <div class="well">
+   <h3>Product Description</h3>
    <p><?= $product->product_description ?></p>
    </div>
 
-   <h2>Related Products</h2>
+   <h4>Related Products</h4>
 
    <?php
 

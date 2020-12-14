@@ -1,5 +1,6 @@
 <?php 
    include "parts/meta.php";
+   include_once "parts/templates.php";
    include_once "lib/php/functions.php"
 ?>
 
@@ -16,18 +17,22 @@
    
 
    <div class="view-window" style="background-image:url(./img/store/pinkgiftflip.jpg)">
-      <div class="container textblock">
-      <h1>Personalise your gifting experience</h1>
+      <div class="textblock">
+      <h2>For the best things in Life are not just things, make your loved one feel special, wrap your Love in gifts</h2>
+      <div class="btn cta_primary">
+         <a href="product_list.php">START SHOPPING</a>     
       </div>
+      </div>
+      
    </div>
    
    <div class="container">
-   <div class="display-flex">
+   <div class="display-flex" style="margin:5%">
       <div class="article flex-stretch" style="width:50%; padding:5%">
          <div class="content">
             <h2>Personalise your gifts</h2>
             <div class="">
-               <p>Add your own pictures and messages. You can now customize your gufts as required. This makes your gift stand out from the rest and memorable</p>
+               <p>Add your own pictures and messages. You can now customize your gifts as required. This makes your gift stand out from the rest and memorable</p>
             </div>
             <div class="btn cta_primary">
                START SHOPPING
@@ -40,105 +45,69 @@
 </div>
 </div>
 
-   <div class="view-window" style="background-image:url(./img/store/pinkgiftflip.jpg)">
-      <div class="container grid gap">
+   <div class="view-window" style="background-image:url(./img/store/gifts5.jpg)">
+      <div class="container grid gap" style="padding: 5%; color: white">
             <div class="col-xs-12 col-md-6">
-               <img src="img/store/memories.jpg" alt="" style="width:80%; align-items: center;">
+               <img src="./img/store/handmade.jpg" alt="" style="width:90%; align-items: center;">
             </div>
             <div class="col-xs-12 col-md-6">
                <h2>Our story</h2>
                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reiciendis quae doloremque ipsa quos accusamus temporibus soluta, dignissimos ipsum minus sapiente odio sequi molestiae commodi, ab dolores, cupiditate, eaque placeat.
+                Giftitions was started as entrepreneurial venture - Giftitions, where they took orders via instagram and facebook page and handmade the customized products depending on the occasion and need of the client.
                </p>
                <div class="btn cta_primary">
                KNOW MORE
-            </div>
+               </div>
             </div>
       </div>
    </div>
    
 
-   <div class="container">
-   <div class="card soft light display-flex" style="margin:5%">
-      <div class="article flex-stretch" style="width:50%; padding:5%">
-         <div class="content">
-            <h2>New product</h2>
-            <div class="">
-               <p>Made with fresh seasonal oranges Lorem, ipsum dolor sit amet consectetur, adipisicing elit. A ratione quasi, cum nam, optio, quas quis sequi perspiciatis qui distinctio delectus molestiae quo quaerat ad cupiditate dignissimos quod numquam. Laboriosam.</p>
+   <div class="container grid gap" style="padding: 5%">
+            
+            <div class="col-xs-12 col-md-6">
+               <h2>Customize this explosion box</h2>
+               <p>
+                You can add your own messages and pictures 
+                  3 layers of boxes each with increasing level of surprises.
+               </p>
+               <div class="btn cta_primary">
+               <a href="http://shinyfernandes.com/aau/wnm608/fernandes.shiny/product_item.php?id=9">ORDER NOW</a>
+               </div>
             </div>
-            <div class="btn cta_primary">
-               ORDER NOW
+            <div class="col-xs-12 col-md-6">
+               <img src="./img/store/explosionbox.jpg" alt="" style="width:90%; align-items: center;">
             </div>
-         </div>
       </div>
-      <div class="flex-stretch display-flex flex-align-center flex-justify-center" style="width: 50%">
-      <img src="img/orange.png" alt="" style="width:70%; align-items: center;">
-      </div>
-</div>
-</div>
 
-<div class="view-window" style="background-image:url(./img/store/pinkgiftflip.jpg)">
-      <div>
-         
+
+<div class="view-window" style="background-image:url(./img/store/gifts3.jpg)">
+       <div class="textblock">
+      <h2>
+      Making your gifting experience a memorable one</h2>
+      <div class="btn cta_primary">
+         <a href="product_list.php">START SHOPPING</a>     
+      </div>
       </div>
    </div>
 
 <div class="container">
-   <article id="article3" style="margin: 2%">
-      <div class="grid gap">
-         <div class="grid card soft light col-xs-12 col-md-6 gap">
-            <div class="col-4">
-               <img src="img/product1.jpeg" style="width:100%; height:100%; object-fit: cover;">
-            </div>
-            <div class="col-8">
-               <h2>Product 1</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis velit iste architecto debitis quo eius quia dolor in voluptas quae aliquam temporibus vero sunt esse, odio minus soluta.</p>
-               <div class="btn cta_primary">
-               <h6 style="margin:0%">TRY NOW</h6>
-               </div>
-            </div>
-         </div>
-         <div class="grid card soft light col-xs-12 col-md-6 gap">
-            <div class="col-4">
-               <img src="img/product2.jpg" style="width:100%; height:100%; object-fit: cover;">
-            </div>
-            <div class="col-8">
-               <h2>Product 2</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis velit iste architecto debitis quo eius quia dolor in voluptas quae aliquam temporibus vero sunt esse, odio minus soluta.</p>
-               <div class="btn cta_primary">
-               <h6 style="margin:0%">TRY NOW</h6>
-               </div>
-            </div>
-         </div>
-         <div class="grid card soft light col-xs-12 col-md-6 gap">
-           <div class="col-4">
-               <img src="img/product3.jpg" style="width:100%; height:100%; object-fit: cover;">
-            </div>
-            <div class="col-8">
-               <h2>Product 3</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis velit iste architecto debitis quo eius quia dolor in voluptas quae aliquam temporibus vero sunt esse, odio minus soluta.</p>
-               <div class="btn cta_primary">
-               <h6 style="margin:0%">TRY NOW</h6>
-               </div>
-            </div>
-         </div>
-         <div class="grid card soft light col-xs-12 col-md-6 gap">
-            <div class="col-4">
-               <img src="img/product4.jpeg" style="width:100%; height:100%; object-fit: cover;">
-            </div>
-            <div class="col-8">
-               <h2>Product 4</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis velit iste architecto debitis quo eius quia dolor in voluptas quae aliquam temporibus vero sunt esse, odio minus soluta.</p>
-               <div class="btn cta_primary">
-               <h6 style="margin:0%">TRY NOW</h6>
-               </div>
-            </div>
-         </div>
+      <h2>Explore our new products</h2>
 
+      <?php recommendCategory('home decor'); ?>
+   </div>
+
+<div class="container">
+   <div class="display-flex">
+      <div class="flex-stretch">
       </div>
-   </article>
+      <div class="flex-none">
+         <div class="btn borderbutton">
+         <a href="./admin/index.php">PRODUCTS ADMIN</a>
+         </div> 
+      </div>
+   </div>          
 </div>
-
 
 <?php include "parts/footer.php" ?>
 
