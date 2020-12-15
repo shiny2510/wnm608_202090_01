@@ -35,7 +35,7 @@
                <p>Add your own pictures and messages. You can now customize your gifts as required. This makes your gift stand out from the rest and memorable</p>
             </div>
             <div class="btn cta_primary">
-               START SHOPPING
+               <a href="product_list.php">START SHOPPING</a>
             </div>
          </div>
       </div>
@@ -56,7 +56,7 @@
                 Giftitions was started as entrepreneurial venture - Giftitions, where they took orders via instagram and facebook page and handmade the customized products depending on the occasion and need of the client.
                </p>
                <div class="btn cta_primary">
-               KNOW MORE
+               <a href="about.php">KNOW MORE</a>
                </div>
             </div>
       </div>
