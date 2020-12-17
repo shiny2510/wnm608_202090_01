@@ -34,7 +34,7 @@
 	</div>
 	</div>
 <div class="footerbottom">
-		<p>© 2020 ShinyFernandes. All rights reserved</p>
+		<p>© 2020 Giftitions. All rights reserved</p>
 </div>
 </div>
 </html>

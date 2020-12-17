@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Store</title>
+   <title>Giftitions-gift your emotions</title>
 </head>
 <body>
    <div class="position-fixed">

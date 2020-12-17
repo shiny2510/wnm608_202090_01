@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 07, 2020 at 10:19 PM
+-- Generation Time: Dec 16, 2020 at 05:30 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -47,18 +47,19 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_description`, `category`, `quantity`, `image_main`, `image_other`, `image_thumb`, `date_create`, `date_modify`) VALUES
-(1, 'Butterfly Windchime', 18.00, 'Butterfly shaped elements, Paper product, pink color, windchime', 'home decor', 1, 'images/windchime_main.jpg', 'images/windchime_1.jpg, images/windchime_2.jpg, images/windchime_3.jpg', '', '2020-11-07 22:35:46', '0000-00-00 00:00:00'),
-(2, '25 anniversary theme Bottle Lamp ', 35.00, '25th Anniversary Themed bottle silver lamp with fairy lights and picture frames silver color', 'home decor', 1, 'images/bottlelamp25_main.jpg', 'images/bottlelamp25_1.jpg,\r\nimages/bottlelamp25_2.jpg,\r\nimages/bottlelamp25_3.jpg', '', '2020-11-07 22:35:42', '0000-00-00 00:00:00'),
-(3, 'family book ', 45.00, 'scrap book / family album , insert customized pictures and messages ', 'photo albums', 1, 'familybook_1.jpg', 'images/familybook_1.jpg,\r\nimages/familybook_2.jpg,\r\nimages/familybook.mov', '', '2020-11-07 22:35:38', '0000-00-00 00:00:00'),
-(4, 'valentines day photo album', 45.00, 'valentines day theme photo album, insert your pictures and messages ', 'photo album', 1, 'valentinesalbum_1.jpg', 'images/valentinesalbum_1.jpg,\r\nimages/valentinesalbum_2.jpg', '', '2020-11-07 22:35:32', '0000-00-00 00:00:00'),
-(5, 'Birthday Hamper Red', 60.00, 'Red Theme Birthday Basket Hamper with 12 products (handmade cards and accessories)', 'hampers', 1, 'hamper_1.jpg', 'images/hamper_1.jpg,\r\nimages/hamper_2.jpg,\r\nimaes/hamper.mov', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(6, 'Birthday Hamper purple', 60.00, 'purple blue Theme Birthday Basket Hamper with 12 products (handmade cards and accessories)', 'hampers', 1, 'hamper2_1.jpg', 'images/hamper2_1.jpg,\r\nimages/hamper2_2.jpg,\r\nimaes/hamper.mov', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(7, 'frames - mothers day ', 25.00, 'mothers day wall frame with 11 pictures insertable', 'frames', 1, 'images/momframe_1.jpg', 'images/momframe_1.jpg,\r\nimages/momframe_2.jpg,\r\nimages/momframe_3.jpg', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(8, 'frames - set of 3', 25.00, 'set of 3 frames desk mounted', 'frames', 1, 'images/frameset_1.jpg', 'images/frameset_1.jpg,\r\nimages/frameset_2.jpg,', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(9, 'explosion box - theme 1', 45.00, 'explosion box with customized pictures and messages, 3 layers', 'explosion box', 1, 'images/eboxtheme1_1.jpg', 'images/eboxtheme1_1.jpg,\r\nimages/eboxtheme1_2.jpg,', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(10, 'explosion box - theme 2', 45.00, 'explosion box with customized pictures and messages, 3 layers', 'explosion box', 1, 'images/eboxtheme2_1.jpg', 'images/eboxtheme2_1.jpg,\r\nimages/eboxtheme2_2.jpg,', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(11, 'thank you card ', 8.00, 'Handmade Thank you Card', 'cards', 1, 'images/tycard_1.jpg', 'images/tycard_1.jpg,\r\nimages/tycard_2.jpg,', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
-(12, 'birthday card ', 8.00, 'Handmade birthday Card', 'cards', 1, 'images/bdcard_1.jpg', 'images/bdcard_1.jpg,\r\nimages/bdcard_2.jpg,', '', '2020-11-07 22:35:07', '0000-00-00 00:00:00');
+(16, 'Butterfly Windchime', 18.00, 'Butterfly shaped elements, Paper product, pink color, windchime\', \'home decor', 'home decor', 15, 'windchime.jpg', 'windchime.jpg,windchime_2.jpg,windchime_3.jpg', 'windchime.jpg', '2020-11-07 22:35:07', '2020-12-15 01:56:22'),
+(2, '25 anniversary theme Bottle Lamp ', 35.00, '25th Anniversary Themed bottle silver lamp with fairy lights and picture frames silver color', 'home decor', 1, 'bottlelamp.jpg', 'bottlelamp.jpg,bottlelamp_2.jpg', 'bottlelamp.jpg', '2020-11-07 22:35:42', '0000-00-00 00:00:00'),
+(3, 'family book ', 47.00, 'scrap book / family album , insert customized pictures and messages ', 'photo albums', 1, 'family_book.jpg', 'family_book.jpg,family_book_2.jpg', 'family_book.jpg', '2020-11-07 22:35:38', '0000-00-00 00:00:00'),
+(4, 'valentines day photo album', 45.00, 'valentines day theme photo album, insert your pictures and messages ', 'photo album', 1, 'doctortheme_book.jpg', 'doctortheme_book.jpg', 'doctortheme_book.jpg', '2020-11-07 22:35:32', '0000-00-00 00:00:00'),
+(5, 'Birthday Hamper -  blue purple theme color', 60.00, 'purple blue Theme Birthday Basket Hamper with 12 products (handmade cards and accessories)', 'hampers', 1, 'hamper1.jpg', 'hamper1.jpg,hamper1_2.jpg', 'hamper1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(6, 'Birthday Hamper - Red color theme', 60.00, 'Red Theme Birthday Basket Hamper with 12 products (handmade cards and accessories)', 'hampers', 1, 'hamper2.jpg', 'hamper2.jpg,hamper2_2.jpg', 'hamper2.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(7, 'frame - mothers day ', 25.00, 'mothers day wall frame with 11 pictures insertable, dimensions: 24inch*8inch', 'frames', 1, 'frame_mom_1.jpg', 'frame_mom_1.jpg', 'frame_mom_1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(8, 'Frame - Motivational quote ', 25.00, 'Frames with motivational quotes, can add your own quote and message, Hardboard frame suitable for desk accessory, dimensions: 8inch*8inch', 'frames', 1, 'frame_1.jpg', 'frame_1.jpg,frame_1_2.jpg', 'frame_1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(9, 'explosion box - rose, valentines day theme', 45.00, 'explosion box with customized pictures and messages, 3 layers', 'explosion box', 1, 'explosionbox_1.jpg', 'explosionbox_1.jpg', 'explosionbox_1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(10, 'explosion box - red and black anniversary gift theme', 45.00, 'explosion box with customized pictures and messages, 3 layers', 'explosion box', 1, 'explosionbox_2.jpg', 'explosionbox_2.jpg', 'explosionbox_2.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(11, 'thank you card ', 8.00, 'Handmade Thank you Card', 'cards', 1, 'thankyou_card_1.jpg', 'thankyou_card_1.jpg,thankyou_card_2.jpg', 'thankyou_card_1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(12, 'birthday card ', 8.00, 'Piano style - Handmade birthday Card ', 'cards', 1, 'pianocard_1.jpg', 'pianocard_1.jpg,pianocard_2.jpg,pianocard_3.jpg', 'pianocard_1.jpg', '2020-11-07 22:35:07', '0000-00-00 00:00:00'),
+(18, 'Gold Theme Explosion Box', 50.00, 'Gold Theme explosion box with 3 layers. Insert your own images and messages. The final box opens with gold coin chocolates', 'Explosion Box', 5, '', 'explosionbox_3_1.jpg,explosionbox_3_2.jpg', 'explosionbox_3_1.jpg', '2020-12-16 16:30:48', '2020-12-16 16:30:48');
 
 --
 -- Indexes for dumped tables
@@ -78,7 +79,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
